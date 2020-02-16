@@ -11,4 +11,5 @@ Summing, if the account have any type of verify in two steps active the google s
 During the execution you can stop the program with ctrl+c and reexecute then without losing the tryied password, because the failed attempts will saved into a file with the name of the account.
 Whereas this script use multithreading, I advice you to execute this on a desktop computer.
 I will inform you that for the realization of this script I will inspired by this: https://github.com/EliteAndroidApps/WhatsApp-GD-Extractor
-that allows you to download whatsapp backup without have the phone (for decrypt the chat you must have the token that is inside the phone, but for see the images/video folder you must only follow the instruction of this script)
+that allows you to download whatsapp backup without have the phone (for decrypt the chat you must have the token that is inside the phone, but for see the images/video folder you must only follow the instruction of this script).
+In the end I inform you that this script is a beta version and it can have some problem
