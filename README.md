@@ -6,6 +6,10 @@ Simple python script for doing request for taking access token from google, if t
 2. python 3.* installed in your computer, if not installed: https://www.python.org/downloads/
 
 ### Usage
+0. Check you if you have installed configparser and requests with this command:
+```
+  $ python3 -m pip install requests configparser
+  ```
 1. Modify setting.cfg file and write the email you want to test
 2. From console mount the folder of the project and then type 
   ```
