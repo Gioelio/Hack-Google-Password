@@ -1,5 +1,5 @@
 # Hack-Google-Password
-Simple python script for doing request for taking access token from google, if this send a valid token you found the password, this script is only for educational purpose only. I don't take any responsibility for the improper use of this code
+(Currently not working due to a change in google servers) Simple python script for doing request for taking access token from google, if this send a valid token you found the password, this script is only for educational purpose only. I don't take any responsibility for the improper use of this code
 ## Installation and usage
 ### Prerequisistes
 1. O/S: Windows Vista, Windows 7, Windows 8, Windows 10, Mac OS X or Linux
