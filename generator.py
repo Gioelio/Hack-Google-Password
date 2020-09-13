@@ -6,6 +6,8 @@ from datetime import datetime
 import os.path
 import threading
 import random
+import time
+
 
 character_limit = 12
 character_min = 8
@@ -163,17 +165,12 @@ def mix(list1, list2, level):
                     if not sr.tryPassword(passw):
                         preparedPassword.append(passw)
                 '''
-    t = addThread(preparedPassword, list2, level)
-    t2 = addThread(list2, preparedPassword, level)
-    t3 = addThread(list1, preparedPassword, level)
-    t4 = addThread(preparedPassword, list1, level)
-    t4.join()
-    t.join()
-    t2.join()
-    t3.join()
+    mix(preparedPassword, list2, level)
+    mix(list2, preparedPassword, level)
+    mix(list1, preparedPassword, level)
+    mix(preparedPassword, list1, level)
     if(level < 2):
-        t5 = addThread(list1, list2, level+1)
-        t5.join()
+        mix(list1, list2, level+1)
 
 
 def up():
@@ -235,9 +232,13 @@ def generazionePassword():
     for word in invertedWords:
         if(len(word) >= character_min and len(word) <= character_limit):
             sr.tryPassword(word)
+    timeBetweenSleep = 2
     # tentativo con le parole invertite e le parole già conosciute
+    time.sleep(timeBetweenSleep)
     t2 = addThread(invertedWords, words, 2)
+    time.sleep(timeBetweenSleep)
     t3 = addThread(words, invertedWords, 2)
+    time.sleep(timeBetweenSleep)
     t4 = addThread(invertedWords, invertedWords, 2)
     t3.join()
     t4.join()

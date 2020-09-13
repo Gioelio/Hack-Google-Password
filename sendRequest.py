@@ -122,7 +122,6 @@ def getGoogleAccountTokenFromAuth(password):
     if isCapthed == False:
         backupPassword(password)
         allWords.append(password)
-        print('added: ', password)
     return False
 
 
@@ -172,7 +171,8 @@ def tryPassword(item):
         # print('trying ', counter, ' : ', item,)
         if nReqInLastMinute >= 2:
             time.sleep(nReqInLastMinute - 1)
-
+        
+        time.sleep(8)
         print("trying item: ", item)
         if getGoogleAccountTokenFromAuth(item) != False:
             print(item)
