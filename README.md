@@ -1,4 +1,4 @@
-# Hack-Google-Password
+# Hack-Google-Password [now not working for some changes in google]
 Simple python script for doing request for taking access token from google, based on the word inserted from user and mixed between them automatically. If this script send a valid token you found the password, this script is only for educational purpose only. I don't take any responsibility for the improper use of this code (for now I do not ensure it will work, because google has added a system that "bans" too many requests on the same account by responding negatively even to the correct password, but with the addition of the 2 second delay it seems to work) (update: if you read this, probabily this is not working, when i have time i will fix it, if you have some solution please create a new pull request ;) ).
 ## Installation and usage
 ### Prerequisistes
